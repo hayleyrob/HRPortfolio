@@ -1,0 +1,35 @@
+#homeHero {
+  color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  height: 500px;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.terminal-image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#featuredWork {
+  padding-top: 20px;
+  background-color: rgb(64, 81, 181);
+  color: white;
+  padding-bottom: 20px;
+}
+
+#waterfallButton {
+  align-content: center;
+  position:
+}
