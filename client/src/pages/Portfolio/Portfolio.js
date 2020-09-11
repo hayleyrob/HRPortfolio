@@ -98,7 +98,7 @@ const cards = [
      title: "CodeQuiz",
     source: "https://i.imgur.com/u00v92F.png",
     url: "https://hayleyrob.github.io/Code-Quiz/",
-    description: "A timed multiple choice Quiz built with Javascript"
+    description: "A timed multiple choice Quiz built with Javascript",
     gitrepo: "https://github.com/hayleyrob/Code-Quiz",
     cardId: 6,
   },
