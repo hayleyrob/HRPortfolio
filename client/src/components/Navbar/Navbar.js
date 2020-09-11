@@ -32,7 +32,7 @@ const Navbar = () => {
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             <Link to="/" className={classes.link}>
-              Hayley Robinson
+              HR
             </Link>
           </Typography>
           <Link to="/" className={classes.link}>
