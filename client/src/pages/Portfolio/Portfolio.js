@@ -61,7 +61,7 @@ const cards = [
     cardId: 1,
   },
   {
-    title: "Reactfolio",
+    title: "REACTfolio",
     source: "https://i.imgur.com/vXKkxk8.png",
     url: "http://pacific-forest-54922.herokuapp.com",
     description:
@@ -77,6 +77,54 @@ const cards = [
       "Keep track of your workouts and fitness with this MongoDB, Express and Node.js app",
     gitrepo: "https://github.com/hayleyrob/WorkoutTracker",
     cardId: 3,
+  },
+  {
+    title: "ExpressNotetaker",
+    source: "https://i.imgur.com/saoSkeo.png",
+    url: "https://nameless-inlet-68056.herokuapp.com/",
+    description: "Create and access notes with this Express App",
+    gitrepo: "https://github.com/hayleyrob/ExpressNoteTaker",
+    cardId: 4,
+  },
+  {
+    title: "DayPlanner",
+    source: "https://i.imgur.com/vBPj3VB.png",
+    url: "https://hayleyrob.github.io/Day-Planner/",
+    description: "Plan your day with this user-friendly scheduling app",
+    gitrepo: "https://github.com/hayleyrob/Day-Planner",
+    cardId: 5,
+  },
+  {
+     title: "CodeQuiz",
+    source: "https://i.imgur.com/u00v92F.png",
+    url: "https://hayleyrob.github.io/Code-Quiz/",
+    description: "A timed multiple choice Quiz built with Javascript"
+    gitrepo: "https://github.com/hayleyrob/Code-Quiz",
+    cardId: 6,
+  },
+  {
+    title: "EatDaBurger",
+    source: "https://i.imgur.com/DoChCKD.png",
+    url: "https://murmuring-inlet-26055.herokuapp.com/",
+    description: "An interactive app built with Node Express Handlebars",
+    gitrepo: "https://github.com/hayleyrob/EatDaBurger/",
+    cardId: 7,
+  },
+  {
+     title: "ArtistaDay",
+    source: "https://i.imgur.com/Rtp0DET.png",
+    url: "https://hidden-inlet-64215.herokuapp.com/",
+    description: "Full-stack app with a MySQL DB that has a featured artist a day in a timed sales event",
+    gitrepo: "https://github.com/usrs/ArtistaDay",
+    cardId: 8,
+  },
+  {
+    title: "WeatherDashboard",
+    source: "https://i.imgur.com/6wZZnER.png",
+    url: "https://hayleyrob.github.io/WeatherDashboard/",
+    description: "Check the weather by looking up your zipcode with this app",
+    gitrepo: "https://github.com/hayleyrob/WeatherDashboard",
+    cardId: 9,
   }
 
 ];
