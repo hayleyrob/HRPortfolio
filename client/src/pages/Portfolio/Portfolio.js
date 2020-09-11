@@ -50,22 +50,41 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [
+  {
+    title: "eSPACE",
+    source: "https://i.imgur.com/f0dpZJG.png",
+    url: "https://hayleyrob.github.io/eSPACE/",
+    description:
+      "An e-learning app for Space Exploration built with Space-X and SpaceNews API's",
+    gitrepo: "https://github.com/hayleyrob/eSPACE",
+    cardId: 1,
+  },
+  {
+    title: "Reactfolio",
+    source: "https://i.imgur.com/vXKkxk8.png",
+    url: "http://pacific-forest-54922.herokuapp.com",
+    description:
+      "A CMS for React.js that enables users to customize React components",
+    gitrepo: "https://github.com/JonahHouse/React-folio",
+    cardId: 2,
+  },
+  {
+    title: "Fitness-Tracker",
+    source: "https://i.imgur.com/MrgEP18.png",
+    url: "https://guarded-tor-39894.herokuapp.com/",
+    description:
+      "Keep track of your workouts and fitness with this MongoDB, Express and Node.js app",
+    gitrepo: "https://github.com/hayleyrob/WorkoutTracker",
+    cardId: 3,
+  }
+
+];
 
 
 const Portfolio = () => {
   const classes = useStyles()
-  const [itemState, setItemState] = useState({
-    items: []
-  })
-
-  useEffect(() => {
-    axios.get('/api/items')
-      .then(({ data }) => {
-        setItemState({ ...itemState, items: data })
-      })
-      .catch(err => console.error(err))
-  }, [])
+  
 
   return (
     <React.Fragment>
@@ -110,38 +129,34 @@ const Portfolio = () => {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {
-              itemState.items.map(item => (
-                <Grid item key={item} xs={12} sm={6} md={4}>
+            {cards.map(card => (
+                <Grid item key={card} xs={12} sm={6} md={4}>
                   <Card className={classes.card}>
                     <CardMedia
                       className={classes.cardMedia}
-                      image={item.source}
-                      title={item.title}
+                      image={card.source}
+                      title={card.title}
                     />
                     <CardContent className={classes.cardContent}>
                       <Typography gutterBottom variant="h5" component="h2">
-                        {item.title}
+                        {card.title}
                       </Typography>
                       <Typography>
-                        {item.description}
+                        {card.description}
                       </Typography>
                     </CardContent>
                     <CardActions>
-                      <Button variant="contained" color="primary" size="small" href={item.url} target="_blank">
+                      <Button variant="contained" color="primary" size="small" href={card.url} target="_blank">
                         View App
                       </Button>
-                      <Button variant="outlined" color="primary" size="small" href={item.gitrepo} target="_blank">
+                      <Button variant="outlined" color="primary" size="small" href={card.gitrepo} target="_blank">
                         Git Repo
                       </Button>
                     </CardActions>
                   </Card>
                 </Grid>
 
-              )
-                
-                )
-            }
+              ))}
            
             </Grid>
         </Container>
