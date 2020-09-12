@@ -38,13 +38,17 @@ const Navbar = () => {
           <Link to="/" className={classes.link}>
             <Button color="inherit">Home</Button>
           </Link>
+          <Link to="/about" className={classes.link}>
+            <Button color="inherit">About</Button>
+          </Link>
+
           <Link to="/portfolio" className={classes.link}>
-            <Button color="inherit" >Portfolio</Button>
+            <Button color="inherit">Portfolio</Button>
           </Link>
         </Toolbar>
       </AppBar>
     </div>
-  )
+  );
 }
 
 export default Navbar
